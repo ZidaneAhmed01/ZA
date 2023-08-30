@@ -10,7 +10,7 @@ title: Development logs
 | -----------  | ----------- | ----------- |
 | 1     |  Focus working on making index.md    | placehold |
 | 2   | Make the navigation bar functional        | placehold|
-| 3     | Focus on making   |  placehold|
+| 3     | Focus on making c  |  placehold|
 | 4   | Placehold        | placehold|
 | 5    | placehold      |  placehold|
 | 6   | Placehold        | placehold|
