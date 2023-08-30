@@ -6,11 +6,11 @@ title: Development logs
 
 ## TOC (Table of contents)
 
-| Week No      | Plans       |  Resources   
+| Week No      | Plans       |  Hacks   
 | -----------  | ----------- | ----------- |
-| 1     |  placehold      | placehold |
-| 2   | Placehold        | placehold|
-| 3     | placehold    |  placehold|
+| 1     |  Focus working on making index.md    | placehold |
+| 2   | Make the navigation bar functional        | placehold|
+| 3     | Focus on making   |  placehold|
 | 4   | Placehold        | placehold|
 | 5    | placehold      |  placehold|
 | 6   | Placehold        | placehold|
