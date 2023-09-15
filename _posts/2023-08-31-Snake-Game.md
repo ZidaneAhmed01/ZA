@@ -275,7 +275,7 @@ courses: { compsci: {week: 2} }
                 snake[snake.length] = {x: snake[0].x, y: snake[0].y};
                 altScore(++score);
                 addFood();
-                activeDot(food.x, food.y);
+                appleDot(food.x, food.y);
             }
             // Repaint canvas
             ctx.beginPath();
@@ -286,7 +286,7 @@ courses: { compsci: {week: 2} }
                 activeDot(snake[i].x, snake[i].y);
             }
             // Paint food
-            activeDot(food.x, food.y);
+            appleDot(food.x, food.y);
             // Debug
             //document.getElementById("debug").innerHTML = snake_dir + " " + snake_next_dir + " " + snake[0].x + " " + snake[0].y;
             // Recursive call after speed delay, déjà vu
@@ -341,6 +341,15 @@ courses: { compsci: {week: 2} }
         let activeDot = function(x, y){
             ctx.fillStyle = "#FFFFFF";
             ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
+        }
+        let appleDot = function(x, y){
+           ctx.font = "16px Arial"; // Adjust the font size and family here
+           // Draw the image on the canvas at the specified coordinates (x * BLOCK, y * BLOCK)
+           const image = new Image();
+            image.src = "{{ '/images/Apple.jpg' | relative_url }}"; // Replace 'image.png' with the path to your image
+            image.onload = function() {
+            ctx.drawImage(image, x * BLOCK, y * BLOCK, 16, 16);
+    };
         }
         /* Random food placement */
         /////////////////////////////////////////////////////////////
