@@ -99,6 +99,7 @@ body {
     <button data-number>.</button>
     <button data-number>0</button>
     <button data-equals>=</button>
+    <button data-operation>^</button>
   </div>
 </body>
 
@@ -152,6 +153,9 @@ class Calculator {
         break
       case '÷':
         computation = prev / current
+        break
+      case '^':
+        computation = prev ** current
         break
       default:
         return
